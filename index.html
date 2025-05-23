@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dream Big</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: url('https://ied.eu/wp-content/uploads/2018/04/entrepreneur-1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .hamburger {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h1, h2 {
+      color: #ffca28;
+    }
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      background: #ffca28;
+      color: #000;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: transform 0.3s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #ffd54f;
+      transform: scale(1.05);
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .content-box {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 1.5rem;
+      color: #333;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #fbc02d;
+    }
+    
+    .faq-item {
+      background: #222;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #ffca28;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0,0,0,0.85);
+      color: #ccc;
+    }
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 200px;
+        padding: 1rem;
+      }
+      nav ul.open {
+        display: flex;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dream Big</h1>
+  <p> Welcome to Dream Big, where we believe your youth and talent are your greatest assets.</p>
+  <div class="hamburger"><i class="fas fa-bars"></i></div>
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="#lets-work">Let's Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#offerings">Offerings</a></li>
+      <li><a href="#faq">FAQs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="lets-work" data-aos="fade-up">
+    <h2>Let's Work With Rakesh</h2>
+    <p>Join the journey with Rakesh to transform your life using the power of digital platforms. Whether you're looking to become a high achiever or dreamer, Dream Big offers everything you need. Flexible, global, and goal-driven—this is your time.
+        With expert coaching and personalized guidance, your path to success is clearer than ever.</p>
+        <p>Whether you aspire to be an achiever or a dreamer, we have dedicated programs to help you unlock your full potential and thrive in every aspect of life.</p>
+        <p>Take the first step today and register to be part of this transformative experience.
+    </p>
+    <p>Join us in this exciting journey and unlock your true potential.</p>
+    <div class="btn-group">
+      <a class="btn" href="https://forms.gle/2g4UsnZbg6HteW2g8" target="_blank">Do You Want To Become Achiever?</a>
+      <a class="btn" href="https://media.istockphoto.com/id/533837393/photo/clown.jpg?s=1024x1024&w=is&k=20&c=tSlAog5TTEeuG-c4hfBIKwo2X2Cy03l3r8LIF0HFWUE=" target="_blank">Do You Want To Become Dreamer?</a>
+    </div>
+  </section>
+
+  <section id="services" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <div class="content-grid">
+      <div class="content-box">
+        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+        <h3>Business Strategy</h3>
+        <p>Learn effective growth hacking and scalable business techniques with guidance from top professionals and IITians.</p>
+        <p>Courses cover market analysis, competitive positioning, and growth tactics.</p>
+        <p>Hands-on projects and case studies enhance understanding.</p>
+        <p>Prepare to lead your business confidently into the future.</p>
+        <p>Exclusive materials and support for enrolled members.</p>
+      </div>
+      <div class="content-box">
+        <div class="icon"><i class="fas fa-network-wired"></i></div>
+        <h3>Networking Sessions</h3>
+        <p>Connect with like-minded individuals, build strong networks, and create opportunities to grow together.</p>
+        <p>Build relationships that open doors to collaborations and partnerships.</p>
+        <p>Exchange ideas, challenges, and success stories in a supportive environment.</p>
+        <p>Develop your professional circle and gain valuable contacts.</p>
+        <p>All sessions are inclusive and designed to maximize engagement.</p>
+      </div>
+      <div class="content-box">
+        <div class="icon"><i class="fas fa-tools"></i></div>
+        <h3>Workshops</h3>
+        <p>Hands-on workshops to boost your skills.</p>
+        <p>Participate live or access recordings at your convenience.</p>
+        <p>Workshops are led by industry experts and thought leaders.</p>
+        <p>Engage in Q&A sessions and collaborative projects.</p>
+        <p>Continuous learning made accessible and affordable.</p>
+    </div>
+      <div class="content-box">
+        <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <h3>Guidance by Experts</h3>
+        <p>Personal mentorship by IIT graduates and industry experts for shaping your career and personal brand.</p>
+        <p>Gain insights tailored to your unique challenges and goals.</p>
+        <p>Mentors provide guidance, accountability, and motivation throughout your journey.</p>
+        <p>Build valuable connections and networks within your industry.</p>
+        <p>Mentorship is available for all program participants.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="offerings" data-aos="fade-up">
+    <h2>Exclusive Offerings</h2>
+    <div class="content-grid">
+      <div class="content-box">
+        <div class="icon"><i class="fas fa-money-bill-trend-up"></i></div>
+        <h3>Money Making Masterclass</h3>
+        <p>Exclusive access to digital courses that show you how to monetize your skills.</p>
+        <p>Master the art of generating sustainable income streams through proven methods and smart investments.</p>
+        <p>Interactive sessions with financial experts.</p>
+        <p>Achieve financial freedom through actionable insights.</p>
+      </div>
+      <div class="content-box">
+        <div class="icon"><i class="fas fa-user-graduate"></i></div>
+        <h3>Personality Development Course</h3>
+        <p>Grow your confidence, improve communication and leadership for success in interviews and life.</p>
+        <p>Workshops on public speaking, body language, and emotional intelligence.</p>
+        <p>Personalized feedback and coaching to enhance your skills.</p>
+        <p>Build a strong personal brand that stands out in the job market.</p>
+      </div>
+      <div class="content-box">
+        <div class="icon"><i class="fab fa-instagram"></i></div>
+        <h3>Instagram eBook</h3>
+        <p>Use social media to build your personal brand and attract job and freelance opportunities.</p>
+        <p>Learn how to create engaging content, grow your audience, and leverage Instagram for career success.</p>
+        <p>Step-by-step guide to optimizing your profile and posts.</p>
+        <p>Access to exclusive tips and tricks from social media experts.</p>
+        <p>eBook is available for all program participants.</p>
+      </div>
+      <div class="content-box">
+        <div class="icon"><i class="fas fa-gift"></i></div>
+        <h3>Giveaways</h3>
+        <p>Win exciting gifts like iPads, MacBooks, iPhones, and other high-end gadgets.</p>
+        <p>Monthly contests and challenges to keep you engaged and motivated.</p>
+        <p>All participants are eligible for giveaways.</p>
+        <p>Winners are announced on our social media platforms.</p>
+        <p>Join the fun and increase your chances of winning!</p>
+      </div>
+      <div class="content-box">
+        <div class="icon"><i class="fas fa-plane-departure"></i></div>
+        <h3>Trips & Tours</h3>
+        <p>Participate in free international and domestic trips as part of our top performer incentives.</p>
+        <p>Experience new cultures, network with peers, and gain unforgettable memories.</p>
+        <p>Trips are designed to be educational and fun.</p>
+        <p>All expenses covered for top achievers.</p>
+        <p>Join us for an adventure of a lifetime!</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="faq" data-aos="fade-up">
+    <h2>FAQs</h2>
+    <div class="faq-item">
+      <h3>What is Dream Big?</h3>
+      <p>A movement to help young graduates achieve success by utilizing digital opportunities.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Who can join?</h3>
+      <p>Anyone who's passionate about building their career and lifestyle using digital media.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Are the giveaways real?</h3>
+      <p>Absolutely! We reward top participants with gadgets and paid trips.</p>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      <div>
+        <p>Email: rakeshpadavala007@gmail.com </p>
+        <p>Phone: +91 9640478548</p>
+        <p>Instagram: __rakesh_dreams__<a href="https://www.instagram.com/_rakesh_dreams_?igsh=dTZ2cjNhMTR3dGpu" target="_blank">@dreambig</a></p>
+        <p>Location: Madhurawada , Visakhapatnam</p>
+      </div>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Dream Big. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+  document.querySelector('.hamburger').addEventListener('click', () => {
+    document.getElementById('nav-menu').classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
